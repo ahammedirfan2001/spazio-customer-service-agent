@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spazio Restaurant | AI Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="chat-container">
+    <header class="chat-header">
+        <h1>Spazio Restaurant</h1>
+        <p>AI Customer Service Assistant</p>
+    </header>
+
+    <main class="chat-messages" id="chat-messages">
+        <div class="message bot-message">
+            Hello! Welcome to Spazio Restaurant. How can I help you today?
+        </div>
+    </main>
+
+    <form class="chat-input-area" id="chat-form">
+        <input
+            type="text"
+            id="user-input"
+            placeholder="Ask about our menu, prices, or services..."
+            autocomplete="off"
+            required
+        >
+        <button type="submit">Send</button>
+    </form>
+</div>    
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
