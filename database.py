@@ -24,14 +24,21 @@ def create_tables():
     """)
 
     cursor.execute("""
-        CREATE TABLE IF NOT EXISTS menu (
+    CREATE TABLE IF NOT EXISTS menu (
             item_id INTEGER PRIMARY KEY,
             item_name TEXT NOT NULL,
             category TEXT,
+            size TEXT,
             price REAL NOT NULL,
             available INTEGER NOT NULL
         )
     """)
+
+    cursor.execute("PRAGMA table_info(menu)")
+    columns = [row[1] for row in cursor.fetchall()]
+
+    if "size" not in columns:
+        cursor.execute("ALTER TABLE menu ADD COLUMN size TEXT")
 
     connection.commit()
     connection.close()
@@ -62,23 +69,25 @@ def load_restaurant_info():
 def load_menu():
     connection = get_connection()
     cursor = connection.cursor()
+    cursor.execute("DELETE FROM menu")
 
-    csv_path = DATA_DIR / "menu.csv"
+    csv_path = DATA_DIR / "menu_corrected_from_official_pdf.csv"
 
-    with open(csv_path, "r", encoding="utf-8", newline="") as file:
+    with open(csv_path, "r", encoding="utf-8-sig", newline="") as file:
         reader = csv.DictReader(file)
 
         for row in reader:
             cursor.execute(
                 """
                 INSERT OR REPLACE INTO menu
-                (item_id, item_name, category, price, available)
-                VALUES (?, ?, ?, ?, ?)
+                (item_id, item_name, category, size, price, available)
+                VALUES (?, ?, ?, ?, ?, ?)
                 """,
                 (
                     int(row["item_id"]),
                     row["item_name"],
                     row["category"],
+                    row["size"],
                     float(row["price"]),
                     int(row["available"].lower() == "true")
                 )

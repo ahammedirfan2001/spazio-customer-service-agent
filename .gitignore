@@ -11,5 +11,12 @@ venv/
 __pycache__/
 *.py[cod]
 
-# Local SQLite database
-spazio.db
+# Local SQLite databases
+*.db
+*.db-journal
+
+# Generated FAISS vector store
+vector_store/
+
+# IDE files
+.vscode/

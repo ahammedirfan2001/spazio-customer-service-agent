@@ -1,36 +1,228 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spazio Restaurant | AI Assistant</title>
+
+    <title>Spazio Restaurant | Good Food, Good Moments</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
-<body>
-<div class="chat-container">
-    <header class="chat-header">
-        <h1>Spazio Restaurant</h1>
-        <p>AI Customer Service Assistant</p>
-    </header>
 
-    <main class="chat-messages" id="chat-messages">
-        <div class="message bot-message">
-            Hello! Welcome to Spazio Restaurant. How can I help you today?
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <a href="#home" class="brand">
+            <img src="{{ url_for('static', filename='images/spazio-logo.png') }}"
+                 alt="Spazio Restaurant">
+        </a>
+
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#assistant">AI Assistant</a>
+            <a href="#experience">Our Story</a>
         </div>
+
+        <a href="#assistant" class="nav-cta">
+            Talk to us <span>↗</span>
+        </a>
+    </nav>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <div class="hero-index">
+                    <span class="index-line"></span>
+                    <span>WELCOME TO SPAZIO</span>
+                </div>
+
+                <h1>
+                    More than<br>
+                    just a meal.<br>
+                    <em>A feeling.</em>
+                </h1>
+
+                <p class="hero-description">
+                    A welcoming space, thoughtfully prepared food,
+                    and moments worth sharing.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#experience" class="primary-button">
+                        Discover our story <span>↗</span>
+                    </a>
+
+                    <a href="#assistant" class="text-link">
+                        Have a question?
+                    </a>
+                </div>
+
+                <div class="hero-bottom">
+                    <span>01 — THE SPAZIO EXPERIENCE</span>
+                    <span>GOOD FOOD. GOOD MOMENTS.</span>
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+                <img
+                    src="{{ url_for('static', filename='images/spazio-interior.png') }}"
+                    alt="Warm and welcoming Spazio Restaurant interior"
+                >
+
+                <div class="photo-caption">
+                    <span>THE SPAZIO SPACE</span>
+                    <span>MADE TO BRING PEOPLE TOGETHER</span>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUCTION -->
+        <section class="intro-section" id="experience">
+
+            <div class="section-label">
+                <span>01</span>
+                <span>OUR EXPERIENCE</span>
+            </div>
+
+            <div class="intro-content">
+                <h2>
+                    Good food is<br>
+                    best enjoyed <em>together.</em>
+                </h2>
+
+                <p>
+                    At Spazio, we believe that a meal is more than
+                    what's served on the table. It's about the people,
+                    the atmosphere and the memories made along the way.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- AI ASSISTANT -->
+        <section class="assistant-section" id="assistant">
+
+            <div class="assistant-heading">
+                <div>
+                    <span class="eyebrow">YOUR SPAZIO GUIDE</span>
+                    <h2>Let's make things<br><em>easy.</em></h2>
+                </div>
+
+                <p>
+                    Curious about our menu, prices or services?
+                    Ask our assistant and get the information you need.
+                </p>
+            </div>
+
+
+            <div class="assistant-card">
+
+                <div class="assistant-top">
+
+                    <div class="assistant-identity">
+                        <div class="assistant-avatar">S</div>
+
+                        <div>
+                            <h3>Spazio Assistant</h3>
+                            <span>Restaurant information assistant</span>
+                        </div>
+                    </div>
+
+                    <span class="assistant-status">
+                        <span class="status-dot"></span>
+                        Available
+                    </span>
+
+                </div>
+
+
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message bot-message">
+                        Hello! Welcome to Spazio. How can I help you today?
+                    </div>
+                </div>
+
+
+                <div class="suggestions">
+                    <button type="button" class="suggestion"
+                        data-prompt="What are your opening hours?">
+                        Opening hours
+                    </button>
+
+                    <button type="button" class="suggestion"
+                        data-prompt="What vegetarian options do you offer?">
+                        Vegetarian options
+                    </button>
+
+                    <button type="button" class="suggestion"
+                        data-prompt="What is the price of Chicken Biriyani?">
+                        Menu prices
+                    </button>
+
+                    <button type="button" class="suggestion"
+                        data-prompt="Do you provide delivery?">
+                        Delivery
+                    </button>
+                </div>
+
+
+                <form class="chat-input-area" id="chat-form">
+
+                    <input
+                        type="text"
+                        id="user-input"
+                        placeholder="Write your question here..."
+                        autocomplete="off"
+                        required
+                    >
+
+                    <button type="submit">
+                        Send ↗
+                    </button>
+
+                </form>
+
+                <p class="assistant-disclaimer">
+                    Powered by Spazio AI
+                </p>
+
+            </div>
+
+        </section>
+
     </main>
 
-    <form class="chat-input-area" id="chat-form">
-        <input
-            type="text"
-            id="user-input"
-            placeholder="Ask about our menu, prices, or services..."
-            autocomplete="off"
-            required
-        >
-        <button type="submit">Send</button>
-    </form>
-</div>    
-<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <img src="{{ url_for('static', filename='images/spazio-logo.png') }}"
+             alt="Spazio Restaurant">
+
+        <span>Good food. Good moments.</span>
+
+        <span>© Spazio Restaurant</span>
+
+    </footer>
+
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 
 </body>
 </html>

@@ -20,14 +20,14 @@ def lookup_restaurant_info(topic):
 
 
 
-def lookup_menu_item(item_name):
+
+def lookup_menu_item(item_name, size=None):
     connection = get_connection()
     cursor = connection.cursor()
 
-    # Search only the regular menu, excluding catering.
     cursor.execute(
         """
-        SELECT item_name, category, price, available
+        SELECT item_name, category, size, price, available
         FROM menu
         WHERE UPPER(TRIM(category)) != 'CATERING'
         ORDER BY item_name
@@ -35,59 +35,74 @@ def lookup_menu_item(item_name):
     )
 
     rows = cursor.fetchall()
+
     connection.close()
 
     search_name = item_name.strip().casefold()
 
-    # First, find exact matches.
+    # Normalise common spelling variations
+    search_name = search_name.replace("biryani", "biriyani")
+
+    # Find exact item-name matches first.
     exact_matches = [
         row for row in rows
         if row[0].strip().casefold() == search_name
     ]
 
-    # If no exact match exists, search for partial matches.
+    # If no exact match exists, try partial matching.
     if exact_matches:
         results = exact_matches
     else:
         results = [
             row for row in rows
             if search_name in row[0].strip().casefold()
+            or row[0].strip().casefold() in search_name
+        ]
+
+    # Filter by portion size when the customer specifies one.
+    if size:
+        results = [
+            row for row in results
+            if (row[2] or "").strip().casefold() == size.strip().casefold()
         ]
 
     menu_items = []
 
     for row in results:
-        price = float(row[2])
+        price = float(row[3])
 
         menu_items.append({
             "item_name": row[0],
             "category": row[1],
+            "size": row[2] or None,
             "price": price if price > 0 else None,
             "price_status": (
                 "confirmed" if price > 0 else "unconfirmed"
             ),
-            "available": bool(row[3])
+            "available": bool(row[4])
         })
 
     return menu_items
 
 
-def calculate_item_total(item_name, quantity):
+
+
+def calculate_item_total(item_name, quantity, size=None):
     if not isinstance(quantity, int) or isinstance(quantity, bool):
         return "Please provide a whole-number quantity."
 
     if quantity <= 0:
         return "Quantity must be greater than zero."
 
-    results = lookup_menu_item(item_name)
+    results = lookup_menu_item(item_name, size)
 
     if not results:
-        return "Sorry, I couldn't find that item on the regular menu."
+        return "Sorry, I couldn't find that item with the requested size."
 
     if len(results) > 1:
         return (
-            "Multiple regular menu items matched your search. "
-            "Please provide a more specific item name."
+            "Multiple menu entries matched your search. "
+            "Please provide a more specific item name or size."
         )
 
     item = results[0]
@@ -102,11 +117,13 @@ def calculate_item_total(item_name, quantity):
 
     return {
         "item_name": item["item_name"],
+        "size": item["size"],
         "quantity": quantity,
         "unit_price": item["price"],
         "total_price": round(total, 2),
         "currency": "INR"
     }
+
 
 
 

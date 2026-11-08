@@ -1,0 +1,292 @@
+﻿item_id,item_name,category,size,price,available
+1,Tea,Hot Beverages,,12,True
+2,Coffee (Bru),Hot Beverages,,25,True
+3,Coffee(Normal),Hot Beverages,,15,True
+4,Boost,Hot Beverages,,25,True
+5,Horlicks,Hot Beverages,,25,True
+6,Black Tea,Hot Beverages,,12,True
+7,Black Coffee (Bru),Hot Beverages,,15,True
+8,Black Coffee (Normal),Hot Beverages,,12,True
+9,Lemon Tea,Hot Beverages,,15,True
+10,Mint Tea,Hot Beverages,,15,True
+11,Milk,Hot Beverages,,20,True
+12,Grape,Fresh Juices,,60,True
+13,Orange,Fresh Juices,,70,True
+14,Musambi,Fresh Juices,,60,True
+15,Citrus,Fresh Juices,,80,True
+16,Pineapple,Fresh Juices,,60,True
+17,Pomegranate,Fresh Juices,,60,True
+18,Carrot,Fresh Juices,,60,True
+19,Mango,Fresh Juices,,50,True
+20,Watermelon,Fresh Juices,,50,True
+21,Apple (with milk),Fresh Juices,,70,True
+22,Anar (with milk),Fresh Juices,,80,True
+23,Guva (with milk),Fresh Juices,,60,True
+24,Avacado (with milk),Fresh Juices,,70,True
+25,Shamam (with milk),Fresh Juices,,60,True
+26,Mango (with milk),Fresh Juices,,60,True
+27,Watermelone (with milk),Fresh Juices,,60,True
+28,Strawberry (with milk),Fresh Juices,,80,True
+29,Chickoo (with milk),Fresh Juices,,60,True
+30,Nongu (with milk),Fresh Juices,,60,True
+31,Dragon (with milk),Fresh Juices,,80,True
+32,Dates (with milk),Fresh Juices,,90,True
+33,Badam Milk,Fresh Juices,,60,True
+34,Cold Coffee,Fresh Juices,,60,True
+35,Cold Boost,Fresh Juices,,60,True
+36,Fresh Lemon,Fresh Juices,,20,True
+37,Mint Lemon,Fresh Juices,,30,True
+38,Pineapple Lemon,Fresh Juices,,30,True
+39,Grape Lemon,Fresh Juices,,30,True
+40,Ginger Lemon,Fresh Juices,,30,True
+41,Avocado,Milk Shakes,,90,True
+42,Mango,Milk Shakes,,80,True
+43,Chikoo,Milk Shakes,,80,True
+44,Strawberry,Milk Shakes,,90,True
+45,Chocolate,Milk Shakes,,80,True
+46,Dates,Milk Shakes,,100,True
+47,Badam,Milk Shakes,,90,True
+48,Oreo,Milk Shakes,,90,True
+49,Kitkat,Milk Shakes,,90,True
+50,Watermelon,Mojitos,,90,True
+51,Pineapple,Mojitos,,90,True
+52,Green Apple,Mojitos,,90,True
+53,Strawberry,Mojitos,,90,True
+54,Blueberry,Mojitos,,90,True
+55,Lemon,Mojitos,,90,True
+56,Passion Fruit,Mojitos,,90,True
+57,Arabic Veg Salad,Salads,,110,True
+58,Arabic Non Veg Salad,Salads,,150,True
+59,Green Salad,Salads,,100,True
+60,Spicy Fruit Salad,Salads,,110,True
+61,Chilly Pinapple Salad,Salads,,100,True
+62,Hot & Sour Chicken,Soups,,110,True
+63,Hot & Sour Veg,Soups,,90,True
+64,Manchow Chicken,Soups,,120,True
+65,Manchow Veg,Soups,,100,True
+66,Sweet Corn Chicken,Soups,,110,True
+67,Sweet Corn Veg,Soups,,90,True
+68,Talumein Chicken,Soups,,140,True
+69,Talumein Veg,Soups,,120,True
+70,Clear Chicken,Soups,,100,True
+71,Clear Veg,Soups,,80,True
+72,Porotta,Breads,,13,True
+73,Chapathi,Breads,,12,True
+74,Appam,Breads,,10,True
+75,Idiyappam,Breads,,10,True
+76,Puttu,Breads,,12,True
+77,Idli,Breads,,12,True
+78,Nice Pathiri,Breads,,7,True
+81,Poori & Massala,Breads,,60,True
+82,Plain Dosa,Dosa,,20,True
+83,Masala Dosa,Dosa,,80,True
+84,Ghee Roast,Dosa,,70,True
+85,Plain Roast,Dosa,,60,True
+86,Thattu Dosa,Dosa,,20,True
+87,Vengaya Roast,Dosa,,80,True
+88,Uthappam,Dosa,,80,True
+89,Egg Dosa,Dosa,,100,True
+90,Chicken Chilly Dosa,Dosa,,140,True
+91,Beef Chilly Dosa,Dosa,,150,True
+92,Kadala Curry (Kabuli),Curries & Roasts,,45,True
+93,Kadala Curry,Curries & Roasts,,40,True
+94,Green Peas,Curries & Roasts,,45,True
+95,Vegetable Kuruma,Curries & Roasts,,50,True
+96,Egg Curry,Curries & Roasts,,40,True
+97,Egg Roast,Curries & Roasts,,45,True
+99,Chicken Roast,Curries & Roasts,,110,True
+100,Chicken Curry,Curries & Roasts,,100,True
+101,Chicken Kuruma,Curries & Roasts,,120,True
+102,Beef Verattu,Curries & Roasts,,130,True
+103,Beef Liver,Curries & Roasts,,130,True
+104,Mutton Chaps,Curries & Roasts,,150,True
+105,Boiled Egg,Curries & Roasts,,12,True
+106,Extra Pcs,Curries & Roasts,,50,True
+107,Prawns Roast,Curries & Roasts,,180,True
+108,Squid Roast,Curries & Roasts,,160,True
+112,Kada,Fries & Sides,,80,True
+113,Spring,Fries & Sides,,150,True
+114,Chicken Pcs,Fries & Sides,,60,True
+115,Egg Burji,Fries & Sides,,80,True
+117,Omelette,Fries & Sides,Single,20,True
+118,Omelette,Fries & Sides,Double,40,True
+119,Meals,Rice & Biriyani,,70,True
+120,Plain Rice,Rice & Biriyani,,70,True
+121,Mandi Rice,Rice & Biriyani,,90,True
+123,Biriyani Rice,Rice & Biriyani,Half,60,True
+124,Biriyani Rice,Rice & Biriyani,Full,80,True
+126,Ghee Rice,Rice & Biriyani,Half,60,True
+127,Ghee Rice,Rice & Biriyani,Full,70,True
+129,Chicken Biriyani,Rice & Biriyani,Half,100,True
+130,Chicken Biriyani,Rice & Biriyani,Full,140,True
+132,Beef Biriyani,Rice & Biriyani,Half,110,True
+133,Beef Biriyani,Rice & Biriyani,Full,150,True
+135,Egg Biriyani,Rice & Biriyani,Half,80,True
+136,Egg Biriyani,Rice & Biriyani,Full,110,True
+138,Beef Chilly,Beef,Quarter,150,True
+139,Beef Chilly,Beef,Half,300,True
+140,Beef Chilly,Beef,Full,570,True
+142,Chilly Beef,Beef,Quarter,200,True
+143,Chilly Beef,Beef,Half,390,True
+144,Chilly Beef,Beef,Full,750,True
+146,Pepper Beef,Beef,Quarter,210,True
+147,Pepper Beef,Beef,Half,400,True
+148,Pepper Beef,Beef,Full,770,True
+150,Beef Kondattam,Beef,Quarter,210,True
+151,Beef Kondattam,Beef,Half,400,True
+152,Beef Kondattam,Beef,Full,770,True
+154,Ginger Beef,Beef,Quarter,210,True
+155,Ginger Beef,Beef,Half,400,True
+156,Ginger Beef,Beef,Full,770,True
+158,Garlic Beef,Beef,Quarter,210,True
+159,Garlic Beef,Beef,Half,400,True
+160,Garlic Beef,Beef,Full,770,True
+162,Chicken 65,Chicken,Quarter,140,True
+163,Chicken 65,Chicken,Half,280,True
+164,Chicken 65,Chicken,Full,540,True
+166,Chilly Chicken,Chicken,Quarter,190,True
+167,Chilly Chicken,Chicken,Half,370,True
+168,Chilly Chicken,Chicken,Full,730,True
+170,Chicken Manchurian,Chicken,Quarter,190,True
+171,Chicken Manchurian,Chicken,Half,370,True
+172,Chicken Manchurian,Chicken,Full,730,True
+174,Ginger Chicken,Chicken,Quarter,200,True
+175,Ginger Chicken,Chicken,Half,390,True
+176,Ginger Chicken,Chicken,Full,760,True
+178,Garlic Chicken,Chicken,Quarter,200,True
+179,Garlic Chicken,Chicken,Half,390,True
+180,Garlic Chicken,Chicken,Full,760,True
+182,Pepper Chicken,Chicken,Quarter,200,True
+183,Pepper Chicken,Chicken,Half,390,True
+184,Pepper Chicken,Chicken,Full,760,True
+186,Chicken Kondattam,Chicken,Quarter,200,True
+187,Chicken Kondattam,Chicken,Half,390,True
+188,Chicken Kondattam,Chicken,Full,760,True
+190,Dragon Chicken,Chicken,Quarter,260,True
+191,Dragon Chicken,Chicken,Half,500,True
+192,Dragon Chicken,Chicken,Full,980,True
+194,Kadai Chicken,Chicken,Quarter,220,True
+195,Kadai Chicken,Chicken,Half,420,True
+196,Kadai Chicken,Chicken,Full,800,True
+198,Butter Chicken,Chicken,Quarter,230,True
+199,Butter Chicken,Chicken,Half,450,True
+200,Butter Chicken,Chicken,Full,880,True
+202,Paneer Butter Masala,Vegetarian,Quarter,170,True
+203,Paneer Butter Masala,Vegetarian,Half,320,True
+204,Paneer Butter Masala,Vegetarian,Full,640,True
+206,Chilly Paneer,Vegetarian,Quarter,150,True
+207,Chilly Paneer,Vegetarian,Half,290,True
+208,Chilly Paneer,Vegetarian,Full,590,True
+210,Kadai Paneer,Vegetarian,Quarter,160,True
+211,Kadai Paneer,Vegetarian,Half,300,True
+212,Kadai Paneer,Vegetarian,Full,590,True
+214,Dragon Paneer,Vegetarian,Quarter,170,True
+215,Dragon Paneer,Vegetarian,Half,320,True
+216,Dragon Paneer,Vegetarian,Full,640,True
+218,Gobi Manchurian,Vegetarian,Quarter,90,True
+219,Gobi Manchurian,Vegetarian,Half,170,True
+220,Gobi Manchurian,Vegetarian,Full,350,True
+222,Chilly Gobi,Vegetarian,Quarter,100,True
+223,Chilly Gobi,Vegetarian,Half,190,True
+224,Chilly Gobi,Vegetarian,Full,350,True
+225,Chilly Potato,Vegetarian,,100,True
+226,Honey Spicy Potato,Vegetarian,,120,True
+228,Dal Fry,Vegetarian,Quarter,100,True
+229,Dal Fry,Vegetarian,Half,180,True
+230,Dal Fry,Vegetarian,Full,360,True
+232,Gobi 65,Vegetarian,Quarter,100,True
+233,Gobi 65,Vegetarian,Half,180,True
+234,Gobi 65,Vegetarian,Full,360,True
+235,Tomato Fry,Vegetarian,,90,True
+236,Chicken Fried Rice,Fried Rice,,140,True
+237,Beef Fried Rice,Fried Rice,,150,True
+238,Mixed Fried Rice,Fried Rice,,170,True
+239,Egg Fried Rice,Fried Rice,,130,True
+240,Veg Fried rice,Fried Rice,,120,True
+241,Schezwan Chicken Fried Rice,Fried Rice,,150,True
+242,Schezwan Beef Fried Rice,Fried Rice,,160,True
+243,Schezwan Mixed Fried Rice,Fried Rice,,180,True
+244,Schezwan Egg Fried Rice,Fried Rice,,140,True
+245,Schezwan Veg Fried Rice,Fried Rice,,130,True
+246,Chicken Noodles,Noodles,,140,True
+247,Beef Noodles,Noodles,,150,True
+248,Mixed Noodles,Noodles,,170,True
+249,Egg Noodles,Noodles,,130,True
+250,Veg Noodles,Noodles,,120,True
+251,Schezwan Chicken Noodles,Noodles,,150,True
+252,Schezwan Beef Noodles,Noodles,,160,True
+253,Schezwan Mixed Noodles,Noodles,,180,True
+254,Schezwan Egg Noodles,Noodles,,140,True
+255,Schezwan Veg Noodles,Noodles,,130,True
+257,Normal Al Faham,Al Faham,Quarter,160,True
+258,Normal Al Faham,Al Faham,Half,290,True
+259,Normal Al Faham,Al Faham,Full,560,True
+301,Veg,Kerala Snacks,,15,True
+305,Massala Bonda,Kerala Snacks,,12,True
+306,Egg Puffs,Kerala Snacks,,22,True
+261,Peri Peri Al Faham,Al Faham,Quarter,180,True
+262,Peri Peri Al Faham,Al Faham,Half,330,True
+263,Peri Peri Al Faham,Al Faham,Full,640,True
+265,Honey Chilly Al Faham,Al Faham,Quarter,210,True
+266,Honey Chilly Al Faham,Al Faham,Half,390,True
+267,Honey Chilly Al Faham,Al Faham,Full,760,True
+269,Barbeque Al Faham,Al Faham,Quarter,210,True
+270,Barbeque Al Faham,Al Faham,Half,390,True
+271,Barbeque Al Faham,Al Faham,Full,760,True
+273,Al Faham Mandi,Al Faham with Rice,Quarter,230,True
+274,Al Faham Mandi,Al Faham with Rice,Half,430,True
+275,Al Faham Mandi,Al Faham with Rice,Full,840,True
+277,Peri Peri Al Faham Mandi,Al Faham with Rice,Quarter,250,True
+278,Peri Peri Al Faham Mandi,Al Faham with Rice,Half,470,True
+279,Peri Peri Al Faham Mandi,Al Faham with Rice,Full,920,True
+281,Honey Chilli Al Faham Mandi,Al Faham with Rice,Quarter,280,True
+282,Honey Chilli Al Faham Mandi,Al Faham with Rice,Half,530,True
+283,Honey Chilli Al Faham Mandi,Al Faham with Rice,Full,1040,True
+285,Barbecue Al Faham Mandi,Al Faham with Rice,Quarter,280,True
+286,Barbecue Al Faham Mandi,Al Faham with Rice,Half,530,True
+287,Barbecue Al Faham Mandi,Al Faham with Rice,Full,1040,True
+288,Payampori,Kerala Snacks,,12,True
+289,Unda,Kerala Snacks,,12,True
+290,Neyyappam,Kerala Snacks,,12,True
+291,Ulli Vada,Kerala Snacks,,12,True
+292,Uzhunu Vada,Kerala Snacks,,12,True
+293,Parippu Vada,Kerala Snacks,,12,True
+294,Sukyan,Kerala Snacks,,12,True
+295,Elanchi,Kerala Snacks,,15,True
+296,Chicken,Kerala Snacks,,15,True
+297,Veg,Kerala Snacks,,12,True
+298,Chicken,Kerala Snacks,,20,True
+299,Beef,Kerala Snacks,,20,True
+300,Veg,Kerala Snacks,,15,True
+302,Chicken,Kerala Snacks,,30,True
+303,Pathiri,Kerala Snacks,,12,True
+304,Egg Baji,Kerala Snacks,,12,True
+308,Veg,Kerala Snacks,,20,True
+309,Chicken Roll,Kerala Snacks,,30,True
+310,Sprite 250ml,Cold Beverages,,20,True
+311,Coke 250ml,Cold Beverages,,20,True
+312,Fanta 250ml,Cold Beverages,,20,True
+313,Limca 250ml,Cold Beverages,,20,True
+314,Mazza 150ml,Cold Beverages,,10,True
+315,Mazza 250ml,Cold Beverages,,20,True
+316,Pulpy Orange 250ml,Cold Beverages,,25,True
+317,Diet Coke 330ml,Cold Beverages,,50,True
+318,Sprite 300ml,Cold Beverages,,40,True
+319,Coke 300ml,Cold Beverages,,40,True
+320,Diet Sprite 300ml,Cold Beverages,,40,True
+321,Sprite 740ml,Cold Beverages,,35,True
+322,Coke 740ml,Cold Beverages,,35,True
+323,Limca 740ml,Cold Beverages,,35,True
+324,Fanta 740ml,Cold Beverages,,35,True
+325,Mazza 600ml,Cold Beverages,,35,True
+326,Sprite 1L,Cold Beverages,,50,True
+327,Coke 1L,Cold Beverages,,50,True
+328,Fanta 1L,Cold Beverages,,50,True
+329,Limca 1L,Cold Beverages,,50,True
+330,Sprite 2.25L,Cold Beverages,,100,True
+331,Coke 2.25L,Cold Beverages,,100,True
+332,Kinley 500ml,Cold Beverages,,10,True
+333,Kinley 1L,Cold Beverages,,20,True
+334,Kinley 2L,Cold Beverages,,30,True
+403,Tea (Podi),Hot Beverages,,15,True
+404,Chicken Biriyani (Full Single Pcs),Rice & Biriyani,,110,True
