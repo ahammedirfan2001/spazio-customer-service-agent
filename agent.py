@@ -194,8 +194,10 @@ def execute_tool(tool_name, arguments):
     elif tool_name == "handover_to_human":
         return handover_to_human(arguments["reason"])
 
+        
     elif tool_name == "search_restaurant_knowledge":
-        return search_knowledge(arguments["query"])
+        result = search_knowledge(arguments["query"])
+        return result
 
     return {"error": "Unknown tool requested."}
 

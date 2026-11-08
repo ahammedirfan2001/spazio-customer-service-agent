@@ -1,13 +1,10 @@
 # Spazio Restaurant — Profile, History and Brand
 
 ## About Spazio
-Spazio Restaurant's journey in the food and hospitality industry began around 1990 under the leadership of the founder's father.
 
-In 2018, the original restaurant underwent a major renovation, upgraded its facilities and developed into a multi-cuisine restaurant. The name **Spazio** was introduced during this transformation.
+Spazio Restaurant began its journey in the food and hospitality industry around 1990. In 2018, the restaurant underwent a major renovation and expansion, introducing Chinese and Arabian cuisines and adopting the name "Spazio". The business continued to grow, opening its second outlet in Malaparamba in 2025.
 
-The business later expanded by opening its second outlet in Malaparamba in 2025.
-
-Spazio is a multi-cuisine restaurant serving Kerala, Indian, Chinese and Arabian dishes.
+Spazio has more than 35 years of experience in the food and hospitality industry.
 
 ## Brand philosophy
 Spazio is built around three core values:
